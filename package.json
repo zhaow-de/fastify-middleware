@@ -53,6 +53,9 @@
     "node": ">=14.0.0"
   },
   "files": [
-    "dist/src/*"
+    "dist/src/engine.js",
+    "dist/src/index.d.ts",
+    "dist/src/index.js",
+    "dist/src/path-to-regexp.js"
   ]
 }
