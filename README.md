@@ -1,6 +1,12 @@
+![npm (scoped)](https://img.shields.io/npm/v/@zhaow-de/fastify-middleware)
+![Coveralls](https://img.shields.io/coveralls/github/zhaow-de/fastify-middleware)
+![Depfu](https://img.shields.io/depfu/dependencies/github/zhaow-de/fastify-middleware)
+![NPM](https://img.shields.io/npm/l/@zhaow-de/fastify-middleware)
+![npm](https://img.shields.io/npm/dm/@zhaow-de/fastify-middleware)
+
 # fastify-middleware
 
-**Current version: v0.1.0**
+**Current version: v0.1.1**
 
 *fastify-middleware* is the plugin that adds middleware support on steroids to [Fastify](https://www.npmjs.com/package/fastify).
 
