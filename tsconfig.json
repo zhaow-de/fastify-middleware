@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "src/*",
+    "test/*"
+  ]
+}
