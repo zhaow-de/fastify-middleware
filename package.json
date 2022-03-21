@@ -5,7 +5,7 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "npx jest --collectCoverage --detectOpenHandles  --errorOnDeprecated --logHeapUsage --forceExit --runInBand"
+    "test": "npx jest --collectCoverage --detectOpenHandles  --errorOnDeprecated --logHeapUsage --forceExit --runInBand && coveralls < coverage/lcov.info"
   },
   "keywords": [
     "fastify",
@@ -28,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "cors": "^2.8.5",
+    "coveralls": "^3.1.1",
     "dotenv": "^16.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",

@@ -16,7 +16,7 @@ module.exports = {
   moduleNameMapper: {
     "^jose/(.*)$": "<rootDir>/node_modules/jose/dist/node/cjs/$1",
   },
-  coverageReporters: ['json-summary', 'text', 'html'],
+  coverageReporters: ['lcov', 'text', 'html'],
   coverageThreshold: {
     global: {
       branches: 80,
