@@ -1,6 +1,6 @@
 {
   "name": "@zhaow-de/fastify-middleware",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Plugin for Fastify to enable middleware",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -53,6 +53,9 @@
     "node": ">=14.0.0"
   },
   "files": [
-    "dist/src/*"
+    "dist/src/engine.js",
+    "dist/src/index.d.ts",
+    "dist/src/index.js",
+    "dist/src/path-to-regexp.js"
   ]
 }
