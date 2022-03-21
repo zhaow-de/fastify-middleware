@@ -1,8 +1,8 @@
 import fp from 'fastify-plugin';
-import symbols from 'fastify/lib/symbols';
+import * as symbols from 'fastify/lib/symbols';
 import { FastifyMiddleware } from './engine';
 import { FastifyInstance, FastifyPluginCallback } from 'fastify';
-import http from 'http';
+import * as http from 'http';
 
 const kMiddlewares = Symbol('fastify-middlewares');
 const kFastifyMiddleware = Symbol('fastify-middleware-instance');
