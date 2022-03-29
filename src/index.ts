@@ -7,24 +7,16 @@ import * as http from 'http';
 const kMiddlewares = Symbol('fastify-middlewares');
 const kFastifyMiddleware = Symbol('fastify-middleware-instance');
 
-export interface IncomingMessageExtended {
+export class IncomingMessageExtended extends http.IncomingMessage {
   body?: any;
   query?: any;
-}
-
-export class IncomingMessageWithOrigUrl extends http.IncomingMessage {
   originalUrl?: http.IncomingMessage['url'] | undefined;
 }
 
 export type NextFunction = (err?: any) => void;
-type SimpleHandleFunction = (req: http.IncomingMessage & IncomingMessageExtended, res: http.ServerResponse) => void;
-type NextHandleFunction = (
-  req: IncomingMessageWithOrigUrl & IncomingMessageExtended,
-  res: http.ServerResponse,
-  next: NextFunction
-) => void;
+type HandleFunction = (req: IncomingMessageExtended, res: http.ServerResponse, next?: NextFunction) => void;
 
-export type Handler = SimpleHandleFunction | NextHandleFunction;
+export type Handler = HandleFunction;
 
 export type Context = { [key: string]: string | boolean | number | null };
 
@@ -35,21 +27,12 @@ declare module 'fastify' {
   }
 }
 
-export class IncomingMessage extends http.IncomingMessage {
-  originalUrl?: http.IncomingMessage['url'];
-}
-
-export interface IncomingMessageExtended {
-  body?: any;
-  query?: any;
-}
-
 interface SimpleMessage {
   url?: string;
   originalUrl?: http.IncomingMessage['url'];
 }
 
-export type ServerRequest = SimpleMessage | (IncomingMessage & IncomingMessageExtended);
+export type ServerRequest = SimpleMessage | IncomingMessageExtended;
 
 export interface FastifyMiddlewarePluginOptions {
   hook?:
