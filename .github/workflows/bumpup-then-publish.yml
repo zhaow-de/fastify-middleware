@@ -31,7 +31,7 @@ jobs:
     name: 'Update npm dependencies'
     runs-on: ubuntu-latest
     needs: check
-    if: needs.check.steps.check.outputs.exit_code != 0
+    if: needs.check.steps.check.outputs.exit_code == 1
     # ncu return non-zero if there is any npm dependency update detected
     steps:
       - name: 'Check out the develop branch'
