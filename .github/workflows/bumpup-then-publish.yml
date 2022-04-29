@@ -27,6 +27,19 @@ jobs:
           ncu --errorLevel 2 --reject jest,@types/jest
           echo ::set-output name=exit_code::$?
           set -e
+  debug:
+    name: 'intermediate result'
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - run: |
+          set +e
+          echo 1 needs
+          echo 2 needs.check
+          echo 3 needs.check.steps
+          echo 4 needs.check.steps.check
+          echo 5 needs.check.steps.check.outputs
+          echo 6 needs.check.steps.check.outputs.exit_code
   update:
     name: 'Update npm dependencies'
     runs-on: ubuntu-latest
