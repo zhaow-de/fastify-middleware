@@ -34,12 +34,12 @@ jobs:
     steps:
       - run: |
           set +e
-          echo 1 needs
-          echo 2 needs.check
-          echo 3 needs.check.steps
-          echo 4 needs.check.steps.check
-          echo 5 needs.check.steps.check.outputs
-          echo 6 needs.check.steps.check.outputs.exit_code
+          echo 1 ${{ needs }}
+          echo 2 ${{ needs.check }}
+          echo 3 ${{ needs.check.steps }}
+          echo 4 ${{ needs.check.steps.check }}
+          echo 5 ${{ needs.check.steps.check.outputs }}
+          echo 6 ${{ needs.check.steps.check.outputs.exit_code }}
   update:
     name: 'Update npm dependencies'
     runs-on: ubuntu-latest
