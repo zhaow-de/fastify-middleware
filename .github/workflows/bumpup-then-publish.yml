@@ -26,7 +26,7 @@ jobs:
         # we capture the exit code without failing the step, otherwise the entire action fails, even if the next (/last) job succeeded
         run: |
           set +e
-          ncu --errorLevel 2 --reject jest,@types/jest
+          ncu --errorLevel 2
           echo ::set-output name=exit_code::$?
           set -e
   update:
@@ -68,7 +68,7 @@ jobs:
           python-version: '3.9'
       - run: pip install bumpsemver --quiet
       - name: 'Bump up npm dependencies'
-        run: ncu --errorLevel 1 --reject jest,@types/jest --upgrade
+        run: ncu --errorLevel 1 --upgrade
       - name: 'Build'
         id: build
         run: |
