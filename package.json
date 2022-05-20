@@ -1,6 +1,6 @@
 {
   "name": "@zhaow-de/fastify-middleware",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Plugin for Fastify to enable middleware",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
