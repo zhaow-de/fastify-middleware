@@ -8,7 +8,7 @@
 
 # fastify-middleware
 
-**Current version: v1.0.21**
+**Current version: v1.0.22**
 
 *fastify-middleware* is the plugin that adds middleware support on steroids to [Fastify](https://www.npmjs.com/package/fastify).
 
