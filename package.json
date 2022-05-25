@@ -1,6 +1,6 @@
 {
   "name": "@zhaow-de/fastify-middleware",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Plugin for Fastify to enable middleware",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -43,7 +43,7 @@
     "standard": "^17.0.0",
     "ts-jest": "^28.0.3",
     "ts-node": "^10.8.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   },
   "dependencies": {
     "fastify": "^3.29.0",
