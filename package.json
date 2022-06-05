@@ -1,6 +1,6 @@
 {
   "name": "@zhaow-de/fastify-middleware",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Plugin for Fastify to enable middleware",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zhaow-de/fastify-middleware#readme",
   "devDependencies": {
-    "@types/jest": "^28.1.0",
+    "@types/jest": "^28.1.1",
     "@types/node": "^17.0.39",
     "@types/serve-static": "^1.13.10",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
@@ -32,7 +32,7 @@
     "dotenv": "^16.0.1",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^26.4.6",
+    "eslint-plugin-jest": "^26.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "helmet": "^5.1.0",
     "jest": "^28.1.0",
