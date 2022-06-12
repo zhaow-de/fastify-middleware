@@ -103,7 +103,7 @@ function FastifyMiddlewarePlugin(fastify: FastifyInstance, options, next) {
 }
 
 const plugin: FastifyPluginCallback<FastifyMiddlewarePluginOptions> = fp(FastifyMiddlewarePlugin, {
-  fastify: '>=3.0.0',
+  fastify: '3.x',
   name: 'fastify-middleware',
 });
 
